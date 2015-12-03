@@ -1,0 +1,16 @@
+Makefile
+config.h
+config.log
+config.status
+libtool
+.deps
+stamp-h1
+*.lo
+*.la
+*.o
+.libs
+.dirstamp
+primesieve
+cpp/*/build/
+node_modules/
+npm-debug.log

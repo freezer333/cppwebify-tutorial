@@ -1,0 +1,11 @@
+html
+  head
+    title C++ Primes on the Web
+  body
+    h1 Examples/Strategies
+
+    ol
+    each type in routes
+        li
+            a(href="/"+type.title)= type.title
+            .descrip= type.description

@@ -1,0 +1,39 @@
+doctype
+html(ng-app='primesApp')
+  head
+    title C++ Primes on the Web
+    script(src="//code.jquery.com/jquery-2.1.4.min.js")
+    script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.js")
+    script.
+        var primesApp = angular.module('primesApp', []);
+
+        primesApp.controller('PrimesController', function ($scope, $http) {
+            $scope.results = [];
+            $scope.submit = function(target) {
+                $http.post('/' + target, {under:$scope.under})
+                    .then(function(docs)  {
+                        $scope.results = docs.data.results;
+                    });
+            };
+        });
+
+    style(type="text/css").
+        ol {
+            margin-top:1em;
+            list-style-position: inside;
+            -webkit-column-count: 5; /* Chrome, Safari, Opera */
+            -moz-column-count: 5; /* Firefox */
+            column-count: 5;
+        }
+        ol li {list-style-type: none;}
+
+  body(ng-controller="PrimesController")
+    h1!= 'Calculate Prime Number using ' + target + ' technique.'
+
+    form(ng-submit="submit('" + target + "')")
+        label(for="under") All primes under:  
+        input(ng-model="under")
+        button(type="submit") Submit
+
+    ol
+        li(ng-repeat="prime in results track by $index") {{prime}}

@@ -1,0 +1,32 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "example web app for using C++ code in a web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freezer333/cppwebify.git"
+  },
+  "keywords": [
+    "c++"
+  ],
+  "author": "Scott Frees <scott.frees@gmail.com> (http://scottfrees.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freezer333/cppwebify/issues"
+  },
+  "homepage": "https://github.com/freezer333/cppwebify#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "ffi": "*",
+    "jade": "^1.11.0",
+    "ref": "*",
+    "ref-array": "*", 
+    "temp": "*", 
+    "rmdir":"*"
+  }
+}

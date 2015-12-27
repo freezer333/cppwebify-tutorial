@@ -11,6 +11,7 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', function(req, res) {
+    var exec = require('child_process').exec;
     var execFile = require('child_process').execFile
     var program = "../cpp/standalone_flex_file/build/Release/standalone_flex_file";
     var under = parseInt(req.body.under);

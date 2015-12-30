@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "nodeprime",
-      "sources": [ "../prime4lib/prime_sieve.c", "../prime4lib/arbiter.cpp", "addon.cpp"],
+      "sources": [ "../prime4lib/prime_sieve.c", "../prime4lib/exchange.cpp", "addon.cpp"],
       "cflags": ["-Wall", "-std=c++11"],
       "include_dirs" : ['../prime4lib', "<!(node -e \"require('nan')\")"],
       "conditions": [

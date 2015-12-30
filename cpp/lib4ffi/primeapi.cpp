@@ -13,7 +13,7 @@ using namespace std;
 // the function fills in the primes array with all prime numbers less
 // than "under".  It returns the number of prime numbers
 // found by the prime_sieve algorithm.
-int getPrimes(int under, int primes[]) {
+EXPORT int getPrimes(int under, int primes[]) {
 	int count = 0;
     Exchange x(
         [&](void * data) {

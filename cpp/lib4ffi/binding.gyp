@@ -1,9 +1,9 @@
 {
   "targets": [
     {
-      "target_name": "libprime",
+      "target_name": "prime",
       "type": "shared_library",
-      "sources": [ "../prime4lib/prime_sieve.h", "../prime4lib/prime_sieve.c", "../prime4lib/exchange.cpp", "primeapi.cpp"],
+      "sources": [ "../prime4lib/prime_sieve.c", "../prime4lib/exchange.cpp", "primeapi.cpp"],
       "cflags": ["-Wall", "-std=c++11"],
       "include_dirs" : ['../prime4lib'],
       "conditions": [

@@ -28,7 +28,15 @@ var types = [
   {
     title: "ffi",
     description: "Using Node Foreign Function Interface (ffi) to call C++ code.  Based on /cpp/lib4ffi"
-  } 
+  },
+  {
+    title: "addonsync",
+    description: "Creating a Synchronous Node Addon that can be called like any other module.  Based on /cpp/nodeprime_sync"
+  },
+  {
+    title: "addon",
+    description: "Creating a Asynchronous Node Addon that can be called like any other module.  Based on /cpp/nodeprime"
+  }
   ];
 
 

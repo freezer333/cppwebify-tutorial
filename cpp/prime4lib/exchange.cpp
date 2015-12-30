@@ -1,7 +1,6 @@
 #include "exchange.h"
 
 void pass(void * exchanger, int data) {
-    exchange * x = (exchange *) exchanger;
+    Exchange * x = (Exchange *) exchanger;
     x->send(data);
 }
-

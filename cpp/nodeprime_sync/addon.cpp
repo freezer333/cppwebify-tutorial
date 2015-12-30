@@ -18,7 +18,7 @@ NAN_METHOD(CalculatePrimes) {
     v8::Local<v8::Array> results = New<v8::Array>(under);
 
     int i = 0;
-    exchange x(
+    Exchange x(
         [&](void * data) {
             Nan::Set(results, i, New<v8::Number>(*((int *) data)));
             i++;

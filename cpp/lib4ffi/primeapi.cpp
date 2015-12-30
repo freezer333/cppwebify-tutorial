@@ -15,8 +15,8 @@ using namespace std;
 // found by the prime_sieve algorithm.
 int getPrimes(int under, int primes[]) {
 	int count = 0;
-    exchange x(
-        [&](void * data) { 
+    Exchange x(
+        [&](void * data) {
             int * iptr = (int *) data;
             primes[count++] = *iptr;
         }
@@ -26,5 +26,3 @@ int getPrimes(int under, int primes[]) {
 
     return count;
 }
-
-

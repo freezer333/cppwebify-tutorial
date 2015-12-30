@@ -19,7 +19,7 @@ class PrimeWorker : public AsyncWorker {
 
 
         void Execute () {
-            exchange x(
+            Exchange x(
                 [&](void * data) {
                     primes.push_back(*((int *) data));
                 }

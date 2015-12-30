@@ -3,9 +3,9 @@
 #include <functional>
 using namespace std;
 
-class exchange {
+class Exchange {
 public:
-    exchange(const std::function<void (void *)> & c) {
+    Exchange(const std::function<void (void *)> & c) {
         this->callback = c;
     }
     void send(int data){

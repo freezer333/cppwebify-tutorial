@@ -25,8 +25,12 @@
     "ffi": "*",
     "jade": "^1.11.0",
     "ref": "*",
-    "ref-array": "*", 
-    "temp": "*", 
-    "rmdir":"*"
+    "ref-array": "*",
+    "temp": "*",
+    "rmdir": "*"
+  },
+  "devDependencies": {
+    "grunt-auto-install": "^0.3.0",
+    "grunt-contrib-clean": "^0.7.0"
   }
 }

@@ -30,6 +30,7 @@
     "rmdir": "*"
   },
   "devDependencies": {
+    "grunt": "^0.4.5",
     "grunt-auto-install": "^0.3.0",
     "grunt-contrib-clean": "^0.7.0"
   }

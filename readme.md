@@ -4,6 +4,10 @@ This repository is the code for a blog series I wrote [here](http://blog.scottfr
 It's designed to outline a few ways to take legacy C++ (or new C++) and integrate it with Node.js.
 
 # Build instructions
+First... get the code:
+```
+> git clone https://github.com/freezer333/cppwebify-tutorial.git
+```
 
 ## Step 1:  Install node-gyp
 This is required for building all the C++ example projects, including the addons.

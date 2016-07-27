@@ -1,7 +1,7 @@
 #define _exchangeclass
 #include <iostream>
 #include <functional>
-using namespace std;
+//using namespace std;
 
 class Exchange {
 public:

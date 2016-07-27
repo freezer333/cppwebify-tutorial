@@ -5,7 +5,7 @@
 #include "exchange.h"
 #include "prime_sieve.h"
 #include "primeapi.h"
-using namespace std;
+//using namespace std;
 
 
 
